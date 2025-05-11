@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Status Display</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      width: 800px;
+      height: 480px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header, .footer {
+      text-align: center;
+    }
+    .battery {
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+    }
+    .bar {
+      height: 30px;
+      border: 2px solid #000;
+      margin: 10px 50px;
+      position: relative;
+    }
+    .bar-fill {
+      height: 100%;
+      background: #000;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      font-size: 28px;
+    }
+    .stats div {
+      text-align: center;
+    }
+    .label {
+      font-size: 16px;
+      color: #555;
+    }
+    .icon {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Status Weergave</h1>
+  </div>
+
+  <div class="battery">🔋 76.3%</div>
+  <div class="bar">
+    <div class="bar-fill" style="width: 76.3%;"></div>
+  </div>
+
+  <div class="stats">
+    <div>
+      <div class="icon">⚡</div>
+      <div>1234 W</div>
+      <div class="label">Verbruik</div>
+    </div>
+    <div>
+      <div class="icon">☀️</div>
+      <div>543 W</div>
+      <div class="label">Zonnepanelen</div>
+    </div>
+    <div>
+      <div class="icon">⏱️</div>
+      <div>5d 14h</div>
+      <div class="label">Uptime</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Laatst geüpdatet: 2025-05-11 23:14</p>
+  </div>
+</body>
+</html>
